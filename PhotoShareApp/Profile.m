@@ -11,7 +11,7 @@
 
 @implementation Profile
 
--(void) addAccounts: (Accounts *) accounts {
+-(void) addAccounts: (Account *) accounts {
     
 }
 
