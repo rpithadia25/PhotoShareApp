@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0398283D19FA0A8D00B2BBB5 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 0398283C19FA0A8D00B2BBB5 /* Account.m */; };
+		0398283F19FA3C8300B2BBB5 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 0398283E19FA3C8300B2BBB5 /* Album.m */; };
+		0398284319FA3EEE00B2BBB5 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0398284219FA3EEE00B2BBB5 /* Profile.m */; };
 		03DF5FCD19FA0059007577BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DF5FCC19FA0059007577BC /* main.m */; };
 		03DF5FD019FA0059007577BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DF5FCF19FA0059007577BC /* AppDelegate.m */; };
 		03DF5FD319FA0059007577BC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DF5FD219FA0059007577BC /* FirstViewController.m */; };
@@ -28,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0398283B19FA0A7800B2BBB5 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		0398283C19FA0A8D00B2BBB5 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		0398283E19FA3C8300B2BBB5 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		0398284019FA3C9300B2BBB5 /* Album.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		0398284119FA3ED300B2BBB5 /* Profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		0398284219FA3EEE00B2BBB5 /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
 		03DF5FC719FA0059007577BC /* PhotoShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DF5FCB19FA0059007577BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DF5FCC19FA0059007577BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +72,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0398283A19FA09F500B2BBB5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0398283B19FA0A7800B2BBB5 /* Account.h */,
+				0398283C19FA0A8D00B2BBB5 /* Account.m */,
+				0398284019FA3C9300B2BBB5 /* Album.h */,
+				0398283E19FA3C8300B2BBB5 /* Album.m */,
+				0398284119FA3ED300B2BBB5 /* Profile.h */,
+				0398284219FA3EEE00B2BBB5 /* Profile.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		03DF5FBE19FA0059007577BC = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +106,7 @@
 		03DF5FC919FA0059007577BC /* PhotoShareApp */ = {
 			isa = PBXGroup;
 			children = (
+				0398283A19FA09F500B2BBB5 /* Classes */,
 				03DF5FCE19FA0059007577BC /* AppDelegate.h */,
 				03DF5FCF19FA0059007577BC /* AppDelegate.m */,
 				03DF5FD119FA0059007577BC /* FirstViewController.h */,
@@ -224,9 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0398283D19FA0A8D00B2BBB5 /* Account.m in Sources */,
 				03DF5FD619FA0059007577BC /* SecondViewController.m in Sources */,
 				03DF5FD019FA0059007577BC /* AppDelegate.m in Sources */,
+				0398283F19FA3C8300B2BBB5 /* Album.m in Sources */,
 				03DF5FD319FA0059007577BC /* FirstViewController.m in Sources */,
+				0398284319FA3EEE00B2BBB5 /* Profile.m in Sources */,
 				03DF5FCD19FA0059007577BC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +446,7 @@
 				03DF5FEF19FA0059007577BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03DF5FF019FA0059007577BC /* Build configuration list for PBXNativeTarget "PhotoShareAppTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +455,7 @@
 				03DF5FF219FA0059007577BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
