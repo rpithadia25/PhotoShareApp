@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Accounts.h"
+#import "Account.h"
 
 @implementation Account
 
