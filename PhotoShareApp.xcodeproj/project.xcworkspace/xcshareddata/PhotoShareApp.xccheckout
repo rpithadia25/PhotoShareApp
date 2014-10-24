@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C1EF862D-4F8D-4F2F-8E21-64BEE447F83A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PhotoShareApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>70A005EDB1DF5F24C706B205502639FAF6D3DEE3</key>
+		<string>github.com:shahmharsh/PhotoShareApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PhotoShareApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>70A005EDB1DF5F24C706B205502639FAF6D3DEE3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:shahmharsh/PhotoShareApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>70A005EDB1DF5F24C706B205502639FAF6D3DEE3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>70A005EDB1DF5F24C706B205502639FAF6D3DEE3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhotoShareApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
