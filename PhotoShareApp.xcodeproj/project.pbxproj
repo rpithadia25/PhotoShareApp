@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DF5FCD19FA0059007577BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DF5FCC19FA0059007577BC /* main.m */; };
+		03DF5FD019FA0059007577BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DF5FCF19FA0059007577BC /* AppDelegate.m */; };
+		03DF5FD319FA0059007577BC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DF5FD219FA0059007577BC /* FirstViewController.m */; };
+		03DF5FD619FA0059007577BC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DF5FD519FA0059007577BC /* SecondViewController.m */; };
+		03DF5FD919FA0059007577BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03DF5FD719FA0059007577BC /* Main.storyboard */; };
+		03DF5FDB19FA0059007577BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03DF5FDA19FA0059007577BC /* Images.xcassets */; };
+		03DF5FDE19FA0059007577BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DF5FDC19FA0059007577BC /* LaunchScreen.xib */; };
+		03DF5FEA19FA0059007577BC /* PhotoShareAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DF5FE919FA0059007577BC /* PhotoShareAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03DF5FE419FA0059007577BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03DF5FBF19FA0059007577BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03DF5FC619FA0059007577BC;
+			remoteInfo = PhotoShareApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03DF5FC719FA0059007577BC /* PhotoShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DF5FCB19FA0059007577BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DF5FCC19FA0059007577BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03DF5FCE19FA0059007577BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03DF5FCF19FA0059007577BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03DF5FD119FA0059007577BC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		03DF5FD219FA0059007577BC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		03DF5FD419FA0059007577BC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		03DF5FD519FA0059007577BC /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		03DF5FD819FA0059007577BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03DF5FDA19FA0059007577BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		03DF5FDD19FA0059007577BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		03DF5FE319FA0059007577BC /* PhotoShareAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoShareAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DF5FE819FA0059007577BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DF5FE919FA0059007577BC /* PhotoShareAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoShareAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03DF5FC419FA0059007577BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DF5FE019FA0059007577BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03DF5FBE19FA0059007577BC = {
+			isa = PBXGroup;
+			children = (
+				03DF5FC919FA0059007577BC /* PhotoShareApp */,
+				03DF5FE619FA0059007577BC /* PhotoShareAppTests */,
+				03DF5FC819FA0059007577BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03DF5FC819FA0059007577BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03DF5FC719FA0059007577BC /* PhotoShareApp.app */,
+				03DF5FE319FA0059007577BC /* PhotoShareAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03DF5FC919FA0059007577BC /* PhotoShareApp */ = {
+			isa = PBXGroup;
+			children = (
+				03DF5FCE19FA0059007577BC /* AppDelegate.h */,
+				03DF5FCF19FA0059007577BC /* AppDelegate.m */,
+				03DF5FD119FA0059007577BC /* FirstViewController.h */,
+				03DF5FD219FA0059007577BC /* FirstViewController.m */,
+				03DF5FD419FA0059007577BC /* SecondViewController.h */,
+				03DF5FD519FA0059007577BC /* SecondViewController.m */,
+				03DF5FD719FA0059007577BC /* Main.storyboard */,
+				03DF5FDA19FA0059007577BC /* Images.xcassets */,
+				03DF5FDC19FA0059007577BC /* LaunchScreen.xib */,
+				03DF5FCA19FA0059007577BC /* Supporting Files */,
+			);
+			path = PhotoShareApp;
+			sourceTree = "<group>";
+		};
+		03DF5FCA19FA0059007577BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03DF5FCB19FA0059007577BC /* Info.plist */,
+				03DF5FCC19FA0059007577BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03DF5FE619FA0059007577BC /* PhotoShareAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				03DF5FE919FA0059007577BC /* PhotoShareAppTests.m */,
+				03DF5FE719FA0059007577BC /* Supporting Files */,
+			);
+			path = PhotoShareAppTests;
+			sourceTree = "<group>";
+		};
+		03DF5FE719FA0059007577BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03DF5FE819FA0059007577BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03DF5FC619FA0059007577BC /* PhotoShareApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DF5FED19FA0059007577BC /* Build configuration list for PBXNativeTarget "PhotoShareApp" */;
+			buildPhases = (
+				03DF5FC319FA0059007577BC /* Sources */,
+				03DF5FC419FA0059007577BC /* Frameworks */,
+				03DF5FC519FA0059007577BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoShareApp;
+			productName = PhotoShareApp;
+			productReference = 03DF5FC719FA0059007577BC /* PhotoShareApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03DF5FE219FA0059007577BC /* PhotoShareAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DF5FF019FA0059007577BC /* Build configuration list for PBXNativeTarget "PhotoShareAppTests" */;
+			buildPhases = (
+				03DF5FDF19FA0059007577BC /* Sources */,
+				03DF5FE019FA0059007577BC /* Frameworks */,
+				03DF5FE119FA0059007577BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03DF5FE519FA0059007577BC /* PBXTargetDependency */,
+			);
+			name = PhotoShareAppTests;
+			productName = PhotoShareAppTests;
+			productReference = 03DF5FE319FA0059007577BC /* PhotoShareAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03DF5FBF19FA0059007577BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Harsh Shah";
+				TargetAttributes = {
+					03DF5FC619FA0059007577BC = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					03DF5FE219FA0059007577BC = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 03DF5FC619FA0059007577BC;
+					};
+				};
+			};
+			buildConfigurationList = 03DF5FC219FA0059007577BC /* Build configuration list for PBXProject "PhotoShareApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03DF5FBE19FA0059007577BC;
+			productRefGroup = 03DF5FC819FA0059007577BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03DF5FC619FA0059007577BC /* PhotoShareApp */,
+				03DF5FE219FA0059007577BC /* PhotoShareAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03DF5FC519FA0059007577BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF5FD919FA0059007577BC /* Main.storyboard in Resources */,
+				03DF5FDE19FA0059007577BC /* LaunchScreen.xib in Resources */,
+				03DF5FDB19FA0059007577BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DF5FE119FA0059007577BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03DF5FC319FA0059007577BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF5FD619FA0059007577BC /* SecondViewController.m in Sources */,
+				03DF5FD019FA0059007577BC /* AppDelegate.m in Sources */,
+				03DF5FD319FA0059007577BC /* FirstViewController.m in Sources */,
+				03DF5FCD19FA0059007577BC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DF5FDF19FA0059007577BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF5FEA19FA0059007577BC /* PhotoShareAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03DF5FE519FA0059007577BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03DF5FC619FA0059007577BC /* PhotoShareApp */;
+			targetProxy = 03DF5FE419FA0059007577BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03DF5FD719FA0059007577BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DF5FD819FA0059007577BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03DF5FDC19FA0059007577BC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03DF5FDD19FA0059007577BC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03DF5FEB19FA0059007577BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03DF5FEC19FA0059007577BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03DF5FEE19FA0059007577BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoShareApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03DF5FEF19FA0059007577BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoShareApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		03DF5FF119FA0059007577BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoShareAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoShareApp.app/PhotoShareApp";
+			};
+			name = Debug;
+		};
+		03DF5FF219FA0059007577BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoShareAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoShareApp.app/PhotoShareApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03DF5FC219FA0059007577BC /* Build configuration list for PBXProject "PhotoShareApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF5FEB19FA0059007577BC /* Debug */,
+				03DF5FEC19FA0059007577BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03DF5FED19FA0059007577BC /* Build configuration list for PBXNativeTarget "PhotoShareApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF5FEE19FA0059007577BC /* Debug */,
+				03DF5FEF19FA0059007577BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03DF5FF019FA0059007577BC /* Build configuration list for PBXNativeTarget "PhotoShareAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DF5FF119FA0059007577BC /* Debug */,
+				03DF5FF219FA0059007577BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03DF5FBF19FA0059007577BC /* Project object */;
+}
