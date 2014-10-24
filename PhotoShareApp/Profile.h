@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Accounts.h"
+#import "Account.h"
 #import "Album.h"
 
 @interface Profile : NSObject
@@ -15,7 +15,7 @@
 @property NSArray *accounts;
 @property NSString *name;
 
--(void) addAccounts: (Accounts *) accounts;
+-(void) addAccounts: (Account *) accounts;
 -(void) uploadAlbum: (Album *) album;
 
 @end
