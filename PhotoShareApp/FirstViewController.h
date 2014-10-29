@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <ELCImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate>
 
+
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (nonatomic, copy) NSArray *chosenImages;
+
+- (IBAction)launchPicker;
 
 @end
 
