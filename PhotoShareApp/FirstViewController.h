@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController <ELCImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate>
+@interface FirstViewController : UIViewController <ELCImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UICollectionView *gridView;
 
-@property (nonatomic, copy) NSArray *chosenImages;
+@property (nonatomic, strong) NSMutableArray *chosenImages;
 
 - (IBAction)launchPicker;
 
