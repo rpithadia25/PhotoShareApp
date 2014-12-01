@@ -63,7 +63,7 @@
         [v removeFromSuperview];
     }
     
-    CGRect workingFrame = _gridView.frame;
+    CGRect workingFrame = self.gridView.frame;
     workingFrame.origin.x = 0;
     
     NSMutableArray *images = [NSMutableArray arrayWithCapacity:[info count]];
@@ -101,6 +101,7 @@
     
     [self.gridView setPagingEnabled:YES];
     [self.gridView setContentSize:CGSizeMake(workingFrame.origin.x, workingFrame.size.height)];
+    
     [self.gridView reloadData];
     
 }
@@ -159,14 +160,16 @@
         self.albumDetailsTextField.placeholder = RPAlbumNamePlaceholder;
         self.albumDetailsTextField.keyboardType = UIKeyboardTypeDefault;
         self.albumDetailsTextField.returnKeyType = UIReturnKeyDone;
+        self.albumDetailsTextField.tag = 0;
     }else{
         self.albumDetailsTextField.placeholder = RPAlbumDescriptionPlaceholder;
         self.albumDetailsTextField.keyboardType = UIKeyboardTypeDefault;
         self.albumDetailsTextField.returnKeyType = UIReturnKeyDone;
+        self.albumDetailsTextField.tag = 1;
     }
     
     self.albumDetailsTextField.autocorrectionType = UITextAutocorrectionTypeNo;
-    self.albumDetailsTextField.tag = 0;
+
     self.albumDetailsTextField.clearButtonMode = UITextFieldViewModeAlways;
     [self.albumDetailsTextField setEnabled:YES];
     
@@ -195,9 +198,32 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    self.currentAlbum.name = textField.text;
     [textField resignFirstResponder];
     return YES;
 }
+
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self saveTextFields:textField];
+}
+
+-(void) saveTextFields: (UITextField *) textField
+{
+    if (textField.tag == 0) {
+        self.currentAlbum.name = textField.text;
+    }else{
+        self.currentAlbum.albumDescription = textField.text;
+    }
+}
+
+- (IBAction)uploadButtonClicked:(id)sender
+{
+    if (![self.currentAlbum.name length] == 0 && ![self.currentAlbum.albumDescription length] == 0) {
+        NSLog(@"%@",self.currentAlbum.name);
+        NSLog(@"%@",self.currentAlbum.albumDescription);
+    }
+    
+}
+
 
 @end
