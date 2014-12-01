@@ -33,6 +33,7 @@
 		BA51BD5019FB064200AF5B5D /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA51BD4419FB064200AF5B5D /* ELCAssetTablePicker.xib */; };
 		BA51BD5119FB064200AF5B5D /* Overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = BA51BD4519FB064200AF5B5D /* Overlay.png */; };
 		BA51BD5219FB064200AF5B5D /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA51BD4619FB064200AF5B5D /* Overlay@2x.png */; };
+		BA8398671A2BEC2C00D8B9E2 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8398661A2BEC2C00D8B9E2 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		BA51BD4419FB064200AF5B5D /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAssetTablePicker.xib; sourceTree = "<group>"; };
 		BA51BD4519FB064200AF5B5D /* Overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Overlay.png; sourceTree = "<group>"; };
 		BA51BD4619FB064200AF5B5D /* Overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Overlay@2x.png"; sourceTree = "<group>"; };
+		BA8398651A2BEC2C00D8B9E2 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BA8398661A2BEC2C00D8B9E2 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				03DF5FCF19FA0059007577BC /* AppDelegate.m */,
 				03DF5FD119FA0059007577BC /* FirstViewController.h */,
 				03DF5FD219FA0059007577BC /* FirstViewController.m */,
+				BA8398651A2BEC2C00D8B9E2 /* Constants.h */,
+				BA8398661A2BEC2C00D8B9E2 /* Constants.m */,
 				03DF5FD419FA0059007577BC /* SecondViewController.h */,
 				03DF5FD519FA0059007577BC /* SecondViewController.m */,
 				03DF5FD719FA0059007577BC /* Main.storyboard */,
@@ -365,6 +370,7 @@
 				03DF5FD319FA0059007577BC /* FirstViewController.m in Sources */,
 				0398284319FA3EEE00B2BBB5 /* Profile.m in Sources */,
 				03DF5FCD19FA0059007577BC /* main.m in Sources */,
+				BA8398671A2BEC2C00D8B9E2 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

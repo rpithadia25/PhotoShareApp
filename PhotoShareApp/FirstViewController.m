@@ -11,6 +11,7 @@
 #import <MobileCoreServices/UTCoreTypes.h>
 #import "FirstViewController.h"
 #import "PatternViewCell.h"
+#import "Constants.h"
 
 @interface FirstViewController ()
 
@@ -23,7 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.chosenImages = [NSMutableArray new];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.albumData = [NSMutableArray new];
+    self.currentAlbum = [Album new];
+    
+    self.albumTextLabels = [NSMutableArray new];
+    [self.albumTextLabels addObject:RPAlbumName];
+    [self.albumTextLabels addObject:RPAlbumDescription];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,15 +59,10 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     PatternViewCell *cell = [[PatternViewCell alloc]init];
     
-    //    for (UIView *v in [_scrollView subviews]) {
-    //        [v removeFromSuperview];
-    //    }
-    
-    for (UIView *v in [_gridView subviews]) {
+    for (UIView *v in [self.gridView subviews]) {
         [v removeFromSuperview];
     }
     
-    //CGRect workingFrame = _scrollView.frame;
     CGRect workingFrame = _gridView.frame;
     workingFrame.origin.x = 0;
     
@@ -71,15 +73,9 @@
                 UIImage* image=[dict objectForKey:UIImagePickerControllerOriginalImage];
                 [images addObject:image];
                 
-                // UIImageView *imageview = [[UIImageView alloc] initWithImage:image];
-                //                [imageview setContentMode:UIViewContentModeScaleAspectFit];
-                //                imageview.frame = workingFrame;
                 [cell.patternImageView setContentMode:UIViewContentModeScaleAspectFit];
                 cell.patternImageView.frame = workingFrame;
-                //[_scrollView addSubview:imageview];
-                //[_gridView addSubview:imageview];
-                [_gridView addSubview:cell.patternImageView];
-                
+                [self.gridView addSubview:cell.patternImageView];
                 workingFrame.origin.x = workingFrame.origin.x + workingFrame.size.width;
             } else {
                 NSLog(@"UIImagePickerControllerReferenceURL = %@", dict);
@@ -89,18 +85,9 @@
                 UIImage* image=[dict objectForKey:UIImagePickerControllerOriginalImage];
                 
                 [images addObject:image];
-                
-                //UIImageView *imageview = [[UIImageView alloc] initWithImage:image];
-                
-                //[imageview setContentMode:UIViewContentModeScaleAspectFit];
                 [cell.patternImageView setContentMode:UIViewContentModeScaleAspectFit];
-                //imageview.frame = workingFrame;
                 cell.patternImageView.frame = workingFrame;
-                
-                //                [_scrollView addSubview:imageview];
-                //[_gridView addSubview:imageview];
-                [_gridView addSubview:cell.patternImageView];
-                
+                [self.gridView addSubview:cell.patternImageView];
                 workingFrame.origin.x = workingFrame.origin.x + workingFrame.size.width;
             } else {
                 NSLog(@"UIImagePickerControllerReferenceURL = %@", dict);
@@ -112,13 +99,8 @@
     
     self.chosenImages = [images mutableCopy];
     
-    NSLog(@"Hello: %@", self.chosenImages);
-    
-    //    [_scrollView setPagingEnabled:YES];
-    //    [_scrollView setContentSize:CGSizeMake(workingFrame.origin.x, workingFrame.size.height)];
-    
-    [_gridView setPagingEnabled:YES];
-    [_gridView setContentSize:CGSizeMake(workingFrame.origin.x, workingFrame.size.height)];
+    [self.gridView setPagingEnabled:YES];
+    [self.gridView setContentSize:CGSizeMake(workingFrame.origin.x, workingFrame.size.height)];
     [self.gridView reloadData];
     
 }
@@ -140,22 +122,82 @@
     return self.chosenImages.count;
 }
 
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    CGRect screenRect = [[UIScreen mainScreen] bounds];
-//    CGFloat screenWidth = screenRect.size.width;
-//    CGFloat screenHeight = screenRect.size.height;
-//    return CGSizeMake(screenWidth/3, screenHeight/3);
-//}
-
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identifier = @"PatternCell";
-    PatternViewCell *cell = (PatternViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    PatternViewCell *cell = (PatternViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:RPPatternCell forIndexPath:indexPath];
     UIImageView *imageView = (UIImageView *) [cell viewWithTag:100];
-    //cell.patternImageView.image = [UIImage imageNamed: [self.chosenImages objectAtIndex:indexPath.row]];
-    imageView.image = [_chosenImages objectAtIndex:indexPath.row];
+    
+    imageView.image = [self.chosenImages objectAtIndex:indexPath.row];
     return cell;
+}
+
+#pragma mark Album Table View
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 2;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:RPAlbumDescriptionCell];
+    
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:RPAlbumDescriptionCell];
+    }
+    /////////////////
+    self.albumDetailsTextField = [[UITextField alloc] initWithFrame:CGRectMake(110, 10, 185, 30)];
+    
+    // [self.albumDetailsTextField addTarget:self action:@selector(textFieldShouldReturn:) forControlEvents:UIControlEventEditingDidEndOnExit];
+    self.albumDetailsTextField.delegate = self;
+    
+    cell.accessoryType = UITableViewCellAccessoryNone;
+    self.albumDetailsTextField.adjustsFontSizeToFitWidth = YES;
+    if ([indexPath row] == 0) {
+        self.albumDetailsTextField.placeholder = RPAlbumNamePlaceholder;
+        self.albumDetailsTextField.keyboardType = UIKeyboardTypeDefault;
+        self.albumDetailsTextField.returnKeyType = UIReturnKeyDone;
+    }else{
+        self.albumDetailsTextField.placeholder = RPAlbumDescriptionPlaceholder;
+        self.albumDetailsTextField.keyboardType = UIKeyboardTypeDefault;
+        self.albumDetailsTextField.returnKeyType = UIReturnKeyDone;
+    }
+    
+    self.albumDetailsTextField.autocorrectionType = UITextAutocorrectionTypeNo;
+    self.albumDetailsTextField.tag = 0;
+    self.albumDetailsTextField.clearButtonMode = UITextFieldViewModeAlways;
+    [self.albumDetailsTextField setEnabled:YES];
+    
+    [cell.contentView addSubview:self.albumDetailsTextField];
+    /////////////////
+    
+    cell.textLabel.text = self.albumTextLabels[indexPath.row];
+    
+    if ([cell.textLabel.text isEqualToString:RPAlbumName]) {
+        cell.detailTextLabel.text = self.currentAlbum.name;
+    }
+    if ([cell.textLabel.text isEqualToString:RPAlbumDescription]) {
+        cell.detailTextLabel.text = self.currentAlbum.albumDescription;
+    }
+    
+    return cell;
+}
+
+#pragma mark Touch methods
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.albumDetailsTextField resignFirstResponder];
+    [self.view endEditing:YES];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    self.currentAlbum.name = textField.text;
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end

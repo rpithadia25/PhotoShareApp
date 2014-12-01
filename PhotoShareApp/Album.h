@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Album : NSObject
-//TODO: figure out how to store photos
+
 @property NSString *name;
 @property NSString *albumDescription;
 
